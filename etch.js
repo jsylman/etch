@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$('#wrapper').on("mouseover","div",function(){
 		$(this).css('background-color','blue');
 	});
-	$("button").click(function(){
+	$('#wrapper').on("click","button", function(){
 		var newHeight = prompt("New grid height/width");
 		$("#wrapper").empty();
 		var wrapperWidth = newHeight*32.5
